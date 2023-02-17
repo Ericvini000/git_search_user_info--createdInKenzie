@@ -9,14 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/error.css">
 
     <title>Git Search - User Not Found</title>
   </head>
   <body>
+    <main class="main__container">
+      <div class="main__warning">
+        <h1 class="main__warning--h1">Ooops!</h1>
+        <p class="main__warning--p">Não encotramos o usuário que você procurou, <span>vamos tentar novamente.</span></p>
+        <button class="main__warning--button">Nova Busca</button>
+      </div>
 
+      <div class="main__imgs">
+        <div class="img__warning img__warning--pink" src="#" alt="Imagem aviso">
+          <img src="../assets/imgs/aviso.svg" alt="Simbolo de aviso">
+        </div>
+        <div class="img__warning img__warning--purple" src="#" alt="Imagem sombra"></div>
+      </div>
+    </main>
     <script type="module" src="../scripts/error.js"></script>
   </body>
 </html>

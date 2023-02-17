@@ -9,4 +9,24 @@
   --color-grey-7: #ffffff;
   --color-alert: #c22554;
   --font-primary: "Inter", sans-serif;
+  --radius-1: 8px;
+  --radius-2: 4px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-primary);
+  background-color: var(--color-grey-2);
+  color: var(--color-grey-7);
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  text-decoration: none;
 }
