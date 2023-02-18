@@ -2,7 +2,7 @@ function returnMainPage() {
   const button = document.querySelector(".nav__a");
   return button.addEventListener("click", (e) => {
     localStorage.removeItem("user");
-    window.location.href = "../../index.html";
+    window.location.replace("../../index.html");
   });
 }
 
@@ -42,7 +42,6 @@ function createRepositoryCard({name, description, html_url}) {
 
 function renderProfile() {
   const user = JSON.parse(localStorage.getItem("user"))
-  console.log(user)
   const repositories = JSON.parse(localStorage.getItem("repos"));
   createAvatar(user)
   repositories.forEach(repos => {
