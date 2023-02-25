@@ -1,4 +1,4 @@
-const baseUrl = "http://api.github.com";
+const baseUrl = "https://api.github.com";
 
 async function getUser(name) {
   const user = await fetch(`${baseUrl}/users/${name}`)
